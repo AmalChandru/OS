@@ -3,7 +3,7 @@
     
     push dx
     mov ah, 0x02 
-    mov al, dh   ; al <- number of sectors to read (0x01 .. 0x80)
+    mov al, dh   ; al 
     mov cl, 0x02 ; cl <- sector (0x01 .. 0x11)
                  ; 0x01 is our boot sector, 0x02 is the first 'available' sector
     mov ch, 0x00 ; ch <- cylinder (0x0 .. 0x3FF, upper 2 bits in 'cl')
