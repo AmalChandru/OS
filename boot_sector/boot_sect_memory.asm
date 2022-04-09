@@ -1,8 +1,6 @@
 mov ah, 0x0e
 
-; attempt 1
-; Fails because it tries to print the memory address (i.e. pointer)
-; not its actual contents
+
 mov al, "1"
 int 0x10
 mov al, the_secret
